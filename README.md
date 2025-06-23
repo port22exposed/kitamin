@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="assets/logo.png" width="128" height="128">
+  <img src="https://raw.githubusercontent.com/port22exposed/kitamin/refs/heads/main/assets/logo.png" width="128" height="128">
 <br>kitamin</h1>
 
 <div align="center">
@@ -16,4 +16,4 @@ This project wouldn't be possible without the amazing work of the following proj
 </ul>
 
 <h2>Source Conditions</h2>
-This project, including all source code and related files, is licensed under the <a href="./LICENSE">MIT License</a> unless otherwise noted.
+This project, including all source code and related files, is licensed under the <a href="https://raw.githubusercontent.com/port22exposed/kitamin/refs/heads/main/LICENSE">MIT License</a> unless otherwise noted.
