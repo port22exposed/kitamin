@@ -4,7 +4,9 @@
     "": {
       "name": "@rbxts/kitamin",
       "dependencies": {
+        "@rbxts/altmake": "^0.1.5",
         "@rbxts/services": "^1.5.5",
+        "@rbxts/vide": "^0.5.7",
       },
       "devDependencies": {
         "@rbxts/compiler-types": "3.0.0-types.0",
@@ -16,11 +18,15 @@
     },
   },
   "packages": {
+    "@rbxts/altmake": ["@rbxts/altmake@0.1.5", "", {}, "sha512-hUgwB5BciLTbXIet98nPZcXugrsFjGuJojMQF0kHX/jqqOdNc15zllTOyzk7FUuOQAg+ECjVw/hERfM/VZe5Tw=="],
+
     "@rbxts/compiler-types": ["@rbxts/compiler-types@3.0.0-types.0", "", {}, "sha512-VGOHJPoL7+56NTatMGqQj3K7xWuzEV+aP4QD5vZiHu+bcff3kiTmtoadaF6NkJrmwfFAvbsd4Dg764ZjWNceag=="],
 
     "@rbxts/services": ["@rbxts/services@1.5.5", "", {}, "sha512-Hu7QH2ecefS60zpakKG3T2vgABydoOJqpSG7nXr59wFAbPk/cA+OcsntYPHUWyHAat0VFGZ5jNZLTLdiqfssvg=="],
 
     "@rbxts/types": ["@rbxts/types@1.0.859", "", {}, "sha512-o2OEWnvYKtIulcBZFxGWxUYWvVCuWr+Vx6TTfgCtKDYeBllDtHLtxQBVKiWu68KP643zHM+EFO2ovJJ0IN9wSg=="],
+
+    "@rbxts/vide": ["@rbxts/vide@0.5.7", "", {}, "sha512-Q9R7ybzuHK1phtLicBHgAjQnlJ/dMsXDs2k296PIMLgLqK9aX/f1skOP7F1K/vo7IrSE0jCG3B3XTOtQL1Sb0Q=="],
 
     "@roblox-ts/luau-ast": ["@roblox-ts/luau-ast@2.0.0", "", {}, "sha512-cmMi093IdwBOLVxwuordhM8AmtbyTIyRpsTbB0D/JauidW4SXsQRQowSwWjHo4QP0DRJBXvOIlxtqEQi50uNzQ=="],
 

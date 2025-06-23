@@ -27,6 +27,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@rbxts/services": "^1.5.5"
+    "@rbxts/altmake": "^0.1.5",
+    "@rbxts/services": "^1.5.5",
+    "@rbxts/vide": "^0.5.7"
   }
 }
