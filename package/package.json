@@ -6,8 +6,8 @@
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "prepublishOnly": "shx cp ../README.md ./README.md && bun run build",
-    "postpublish": "shx rm ./README.md"
+    "prepublishOnly": "./node_modules/.bin/shx cp ../README.md ./README.md && bun run build",
+    "postpublish": "./node_modules/.bin/shx rm ./README.md"
   },
   "keywords": [],
   "author": "port22exposed",
