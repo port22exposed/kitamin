@@ -1,12 +1,13 @@
 {
   "name": "@rbxts/kitamin",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Roblox administration, controlled.",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "shx cp ../README.md ./README.md && bun run build",
+    "postpublish": "shx rm ./README.md"
   },
   "keywords": [],
   "author": "port22exposed",
@@ -24,6 +25,7 @@
     "@rbxts/types": "^1.0.859",
     "prettier": "^3.6.0",
     "roblox-ts": "^3.0.0",
+    "shx": "^0.4.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
