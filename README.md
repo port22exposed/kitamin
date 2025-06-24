@@ -7,7 +7,10 @@
 </div>
 <br>
 An extensible command bar for Roblox experiences with fine-grained customization for the perfect solution to any need.
-
+<br>
+<blockquote class="warning">
+  <strong>Warning:</strong> This is completely in <b>alpha</b> and has zero ETA
+</blockquote>
 <h2>References</h2>
 This project wouldn't be possible without the amazing work of the following projects:
 <ul>
