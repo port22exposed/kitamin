@@ -3,3 +3,5 @@
 **/include
 **.tsbuildinfo
 *sourcemap.json
+**/README*
+!/README*
