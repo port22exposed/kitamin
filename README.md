@@ -9,10 +9,10 @@
 An extensible command bar for Roblox experiences with fine-grained customization for the perfect solution to any need.
 <br>
 <br>
-<table width="100%" style="border:1px solid #D29922; border-radius:6px;">
+<table width="100%" style="border:1px solid; border-radius:6px;">
   <tr>
     <td style="padding:12px;">
-      <strong style="color:#D29922;">&#9888; WARNING:</strong>
+      <strong>&#9888; WARNING:</strong>
       <span>This project is currently in alpha and may be unstable. No estimated release date is available. This warning will be removed upon the official 1.0.0 release.</span>
     </td>
   </tr>
