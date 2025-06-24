@@ -1,7 +1,0 @@
-{
-	"name": "kitamin",
-	"private": true,
-	"workspaces": [
-		"package/*"
-	]
-}
