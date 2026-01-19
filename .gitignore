@@ -1,3 +1,6 @@
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
+
+# Selene
+/roblox.yml
