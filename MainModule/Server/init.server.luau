@@ -1,1 +1,0 @@
-print("Kitamin initialized")

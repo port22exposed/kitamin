@@ -3,7 +3,6 @@
   "emitLegacyScripts": false,
   "tree": {
     "$className": "DataModel",
-
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "Loader": {
@@ -12,7 +11,7 @@
       "Kitamin": {
         "$className": "Folder",
         "MainModule": {
-          "$path": "MainModule"
+          "$path": "module.rbxmx"
         },
         "LICENSE": {
           "$path": "LICENSE.luau"

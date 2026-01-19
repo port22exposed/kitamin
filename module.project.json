@@ -1,6 +1,15 @@
 {
   "name": "MainModule",
   "tree": {
-    "$path": "./MainModule"
+    "$path": "./src/MainModule",
+    "Server": {
+      "$path": "./src/Server",
+      "Shared": {
+        "$path": "./src/Shared"
+      }
+    },
+    "Shared": {
+      "$path": "./src/Shared"
+    }
   }
 }
