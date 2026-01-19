@@ -14,16 +14,23 @@
     },
     "luau-lsp": {
       "settings": {
-        "luau-lsp": {
-          "inlayHints": {
-            "parameterNames": "all",
-          },
-          "roblox": {
-            "enabled": true,
-            "security_level": "roblox_script",
-            "download_api_documentation": true,
-            "download_definitions": true,
-          },
+        "platform": {
+          "type": "roblox",
+        },
+        "inlayHints": {
+          "parameterNames": "all",
+        },
+        "roblox": {
+          "enabled": true,
+          "security_level": "roblox_script",
+          "download_api_documentation": true,
+          "download_definitions": true,
+        },
+        "sourcemap": {
+          "enabled": true,
+          "rojoProjectFile": "default.project.json",
+          "sourcemapFile": "sourcemap.json",
+          "includeNonScripts": true,
         },
       },
     },
