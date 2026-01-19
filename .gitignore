@@ -5,3 +5,9 @@
 # sourcemaps
 /roblox.yml
 /sourcemap.json
+
+# artifacts
+/*.rbxmx
+/*.rbxm
+/*.rbxlx
+/*.rbxl
