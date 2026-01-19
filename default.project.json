@@ -1,10 +1,14 @@
 {
   "name": "Kitamin",
+  "emitLegacyScripts": false,
   "tree": {
     "$className": "DataModel",
 
     "ServerScriptService": {
       "$className": "ServerScriptService",
+      "Loader": {
+        "$path": "./loader.server.luau"
+      },
       "Kitamin": {
         "$className": "Folder",
         "MainModule": {
