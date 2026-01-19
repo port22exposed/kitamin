@@ -1,0 +1,19 @@
+{
+  "name": "Kitamin",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Kitamin": {
+        "$className": "Folder",
+        "MainModule": {
+          "$path": "MainModule"
+        },
+        "LICENSE": {
+          "$path": "LICENSE.luau"
+        }
+      }
+    }
+  }
+}
