@@ -3,8 +3,4 @@
     "label": "Serve and autogenerate sourcemap",
     "command": "rojo serve & rojo build -o& rojo sourcemap --watch --include-non-scripts --output sourcemap.json",
   },
-  {
-    "label": "Build module and watch",
-    "command": "rojo build -o module.rbxmx ./module.project.json --watch",
-  },
 ]

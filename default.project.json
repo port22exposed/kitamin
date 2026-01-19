@@ -11,7 +11,16 @@
       "Kitamin": {
         "$className": "Folder",
         "MainModule": {
-          "$path": "module.rbxmx"
+          "$path": "./src/MainModule",
+          "Server": {
+            "$path": "./src/Server",
+            "Shared": {
+              "$path": "./src/Shared"
+            }
+          },
+          "Shared": {
+            "$path": "./src/Shared"
+          }
         },
         "LICENSE": {
           "$path": "LICENSE.luau"
