@@ -12,6 +12,21 @@
         },
       },
     },
+    "luau-lsp": {
+      "settings": {
+        "luau-lsp": {
+          "inlayHints": {
+            "parameterNames": "all",
+          },
+          "roblox": {
+            "enabled": true,
+            "security_level": "roblox_script",
+            "download_api_documentation": true,
+            "download_definitions": true,
+          },
+        },
+      },
+    },
   },
   "languages": {
     "Luau": {
