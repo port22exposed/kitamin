@@ -1,4 +1,18 @@
 {
+  "lsp": {
+    "json-language-server": {
+      "settings": {
+        "json": {
+          "schemas": [
+            {
+              "fileMatch": ["*.project.json"],
+              "url": "https://raw.githubusercontent.com/rojo-rbx/vscode-rojo/refs/heads/master/schemas/project.template.schema.json",
+            },
+          ],
+        },
+      },
+    },
+  },
   "languages": {
     "Luau": {
       "formatter": {
