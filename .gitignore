@@ -2,5 +2,6 @@
 /*.rbxlx.lock
 /*.rbxl.lock
 
-# Selene
+# sourcemaps
 /roblox.yml
+/sourcemap.json
