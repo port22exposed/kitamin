@@ -1,3 +1,6 @@
 return {
-	Hiding = require("@self/Hiding.luau"),
+	hiding = require("@self/Hiding.luau"),
+	vendored = {
+		okserializer = require("@self/vendored/okserializer/src/init.luau"),
+	},
 }

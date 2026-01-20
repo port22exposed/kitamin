@@ -14,7 +14,7 @@ mt.__call = function(self, ...)
 		local serverInit: Script = script.server
 		serverInit.Name = HttpService:GenerateGUID(false)
 		serverInit.Disabled = false
-		serverInit.Parent = Shared.Hiding.randomService()
+		serverInit.Parent = Shared.hiding.randomService()
 	end
 
 	script:Destroy()
