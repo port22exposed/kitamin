@@ -29,4 +29,4 @@ This project, including all source code and related files, is licensed under the
 ### Third-party licenses
 
 - Vendored libraries
-  - [Sera](https://github.com/MadStudioRoblox/Sera), found within [src/shared/vendored/sera.luau](./src/shared/vendored/sera.luau), is licensed under the Apache-2.0 license referenced in the same file as a comment at the top.
+  - [Z](https://github.com/kohltastrophe/Z), found within [src/shared/vendored/Z.luau](./src/shared/vendored/Z.luau), is licensed under the MIT license referenced in the same file as a comment at the top.
