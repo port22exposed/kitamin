@@ -1,3 +1,3 @@
 return {
-	Hiding = require(script.Hiding),
+	Hiding = require("@self/Hiding.luau"),
 }
