@@ -11,3 +11,6 @@
 /*.rbxm
 /*.rbxlx
 /*.rbxl
+
+# bundled src
+/dist
