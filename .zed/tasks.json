@@ -1,6 +1,11 @@
 [
   {
+    "label": "Bundle and watch",
+    "command": "./bundle.sh",
+    "use_new_terminal": true,
+  },
+  {
     "label": "Serve and autogenerate sourcemap",
-    "command": "rojo serve & rojo build -o& rojo sourcemap --watch --include-non-scripts --output sourcemap.json",
+    "command": "rojo serve & rojo sourcemap --watch --include-non-scripts --output sourcemap.json",
   },
 ]
