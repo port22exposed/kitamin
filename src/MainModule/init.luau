@@ -13,8 +13,6 @@ mt.__call = function(self, ...)
 		RunService:SetAttribute("KITAMIN", true)
 		local serverInit = script.Server
 		serverInit.Name = HttpService:GenerateGUID(false)
-		local sharedModules = script.Shared:Clone()
-		sharedModules.Parent = serverInit
 		serverInit.Disabled = false
 		serverInit.Parent = Shared.Hiding.randomService()
 	end
