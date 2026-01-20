@@ -1,0 +1,3 @@
+[submodule "src/shared/vendored/okserializer"]
+	path = src/shared/vendored/okserializer
+	url = https://github.com/HappySunChild/okserializer
