@@ -24,7 +24,7 @@ This project wouldn't be possible without the amazing work of the following proj
 
 ### Project
 
-This project, including all source code and related files, is licensed under the <a href="https://raw.githubusercontent.com/port22exposed/kitamin/refs/heads/main/LICENSE">MIT License</a> unless otherwise noted.
+This project, including all source code and related files, is licensed under the [MIT License](./LICENSE) unless otherwise noted.
 
 ### Third-party licenses
 
