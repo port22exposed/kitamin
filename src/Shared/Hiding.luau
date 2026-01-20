@@ -9,11 +9,11 @@ for _, service in game:GetChildren() do
 end
 
 -- remove potentially bad services
-pcall(table.remove, accessibleServices, table.find(game:GetService("StarterPack")))
-pcall(table.remove, accessibleServices, table.find(game:GetService("StarterPlayer")))
-pcall(table.remove, accessibleServices, table.find(game:GetService("Teams")))
-pcall(table.remove, accessibleServices, table.find(game:GetService("StarterGui")))
-pcall(table.remove, accessibleServices, table.find(game:GetService("Lighting")))
+pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("StarterPack")))
+pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("StarterPlayer")))
+pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("Teams")))
+pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("StarterGui")))
+pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("Lighting")))
 
 local API = {}
 
