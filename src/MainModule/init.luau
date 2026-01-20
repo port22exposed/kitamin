@@ -11,7 +11,7 @@ mt.__call = function(self, ...)
 		warn("attempted to reinitialize Kitamin")
 	else
 		RunService:SetAttribute("KITAMIN", true)
-		local serverInit = script.Server
+		local serverInit: Script = script.server
 		serverInit.Name = HttpService:GenerateGUID(false)
 		serverInit.Disabled = false
 		serverInit.Parent = Shared.Hiding.randomService()

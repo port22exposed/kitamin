@@ -8,7 +8,7 @@ script = container
 
 local Players = game:GetService("Players")
 
-local client: Script = script.Client
+local client: Script = script.client
 
 Players.PlayerAdded:Connect(function(player: Player)
 	local c = client:Clone()
