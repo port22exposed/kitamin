@@ -1,6 +1,9 @@
+local container = Instance.new("Folder")
+for _, child in script:GetChildren() do
+	child:Clone().Parent = container
+end
 script.Disabled = true
 script:Destroy()
+script = container
 
-local Shared = require("@shared")
-
-print("Kitamin initialized")
+local client: Script = script.Client
