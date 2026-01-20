@@ -8,20 +8,10 @@ script = container
 
 local Players = game:GetService("Players")
 
+local shared = require("@shared")
+
+local log = shared.logger
+
 local client: Script = script.client
 
-Players.PlayerAdded:Connect(function(player: Player)
-	local c = client:Clone()
-	c.Parent = player:FindFirstChildWhichIsA("PlayerGui")
-		or player:FindFirstChildWhichIsA("Backpack")
-		or Instance.new("Backpack", player)
-	c.Disabled = false
-end)
-
-for _, player in Players:GetPlayers() do
-	local c = client:Clone()
-	c.Parent = player:FindFirstChildWhichIsA("PlayerGui")
-		or player:FindFirstChildWhichIsA("Backpack")
-		or Instance.new("Backpack", player)
-	c.Disabled = false
-end
+log.info("Kitamin server initialized")
