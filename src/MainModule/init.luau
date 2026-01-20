@@ -1,6 +1,6 @@
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
-local Shared = require(script.Shared)
+local Shared = require("@shared")
 
 local proxy = newproxy(true)
 local mt = getmetatable(proxy)
