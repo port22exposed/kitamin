@@ -13,4 +13,4 @@
 /*.rbxl
 
 # bundled src
-/dist
+/dist/**/*.luau
