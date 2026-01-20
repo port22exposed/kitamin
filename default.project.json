@@ -11,15 +11,12 @@
       "Kitamin": {
         "$className": "Folder",
         "MainModule": {
-          "$path": "./src/MainModule",
+          "$path": "./dist/init.luau",
           "Server": {
-            "$path": "./src/Server",
-            "Shared": {
-              "$path": "./src/Shared"
-            }
+            "$path": "./dist/init.server.luau"
           },
-          "Shared": {
-            "$path": "./src/Shared"
+          "Client": {
+            "$path": "./dist/init.client.luau"
           }
         },
         "LICENSE": {
