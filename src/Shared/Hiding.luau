@@ -8,6 +8,13 @@ for _, service in game:GetChildren() do
 	end)
 end
 
+-- remove potentially bad services
+pcall(table.remove, accessibleServices, table.find(game:GetService("StarterPack")))
+pcall(table.remove, accessibleServices, table.find(game:GetService("StarterPlayer")))
+pcall(table.remove, accessibleServices, table.find(game:GetService("Teams")))
+pcall(table.remove, accessibleServices, table.find(game:GetService("StarterGui")))
+pcall(table.remove, accessibleServices, table.find(game:GetService("Lighting")))
+
 local API = {}
 
 function API.randomService(): Instance
