@@ -3,10 +3,10 @@
 trap 'kill $(jobs -p) 2>/dev/null' EXIT
 
 mkdir -p dist
-mkdir -p dist/Server
+mkdir -p dist/server
 
 darklua process --watch src/MainModule/init.luau dist &
-darklua process --watch src/Server/init.server.luau dist/Server/init.server.luau &
-darklua process --watch src/Client/init.client.luau dist/Server/Client.client.luau &
+darklua process --watch src/server/init.server.luau dist/server/init.server.luau &
+darklua process --watch src/client/init.client.luau dist/server/client.client.luau &
 
 wait

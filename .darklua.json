@@ -4,7 +4,7 @@
     "require_mode": {
       "name": "luau",
       "aliases": {
-        "@shared": "src/Shared"
+        "@shared": "src/shared"
       }
     }
   },
