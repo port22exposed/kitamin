@@ -1,23 +1,36 @@
 local RunService = game:GetService("RunService")
 
 local logger = {}
+logger.__index = logger
 
-function logger.debug(...)
+function logger.new(name: string?)
+	name = name or script.Name
+	local self = setmetatable({}, logger)
+	self.name = name
+	return self
+end
+
+function logger:debug(...: any): ()
 	if RunService:IsStudio() then
-		return print(`[{script.Name}][debug]`, ...)
+		print(`[{self.name}][debug]`, ...)
 	end
 end
 
-function logger.info(...)
-	return print(`[{script.Name}][info]`, ...)
+function logger:info(...: any): ()
+	print(`[{self.name}][info]`, ...)
 end
 
-function logger.warn(...)
-	return warn(`[{script.Name}][warn]`, ...)
+function logger:warn(...: any): ()
+	warn(`[{self.name}][warn]`, ...)
 end
 
-function logger.error(...)
-	return error(`[{script.Name}][error]: {table.concat({ ... }, " ")}`)
+function logger:error(...: any): ()
+	local args = table.pack(...)
+	local strings = table.create(args.n)
+	for i = 1, args.n do
+		strings[i] = tostring(args[i])
+	end
+	error(`[{self.name}][error]: {table.concat(strings, " ")}`)
 end
 
 return logger
