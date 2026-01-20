@@ -1,4 +1,3 @@
-local TestService = game:GetService("TestService")
 local RunService = game:GetService("RunService")
 
 local logger = {}
@@ -21,4 +20,4 @@ function logger.error(...)
 	return error("[error]:", ...)
 end
 
-return true
+return logger
