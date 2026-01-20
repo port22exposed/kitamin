@@ -1,3 +1,3 @@
-local Shared = require(script.Shared)
+local Shared = require("@shared")
 
 print("Kitamin initialized")
