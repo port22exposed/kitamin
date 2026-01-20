@@ -9,5 +9,6 @@ stdenv.mkDerivation {
     rojo
     stylua
     selene
+    darklua
   ];
 }
