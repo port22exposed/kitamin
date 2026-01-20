@@ -8,15 +8,15 @@ local proxy = newproxy(true)
 local mt = getmetatable(proxy)
 
 mt.__call = function(self, ...)
-	local mutex = RunService:GetAttribute("KITAMIN")
+	local mutex = RunService:GetAttribute("KITAMIN_INITIALIZED")
 	if mutex then
 		log:warn("attempted to reinitialize kitamin")
 	else
-		RunService:SetAttribute("KITAMIN", true)
-		local serverInit: Script = script.server
-		serverInit.Name = HttpService:GenerateGUID(false)
-		serverInit.Disabled = false
-		serverInit.Parent = shared.hiding.randomService()
+		RunService:SetAttribute("KITAMIN_INITIALIZED", true)
+		local server: Script = script.server
+		server.Name = HttpService:GenerateGUID(false)
+		server.Disabled = false
+		server.Parent = shared.hiding.randomService()
 	end
 
 	script:Destroy()
