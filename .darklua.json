@@ -1,0 +1,12 @@
+{
+  "generator": "dense",
+  "bundle": {
+    "require_mode": {
+      "name": "luau",
+      "aliases": {
+        "@shared": "src/Shared"
+      }
+    }
+  },
+  "rules": []
+}
