@@ -8,5 +8,14 @@
       }
     }
   },
-  "rules": []
+  "rules": [
+    "group_local_assignment",
+    "remove_unused_while",
+    "remove_unused_variable",
+    "remove_unused_if_branch",
+    "remove_types",
+    "remove_nil_declaration",
+    "remove_empty_do",
+    "compute_expression"
+  ]
 }
