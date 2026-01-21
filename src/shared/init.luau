@@ -3,6 +3,6 @@ return {
 	logger = require("@self/logger.luau"),
 
 	vendored = {
-		sera = require("@self/vendored/sera.luau"),
+		Z = require("@self/vendored/Z.luau"),
 	},
 }
