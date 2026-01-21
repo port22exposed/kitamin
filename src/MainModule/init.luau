@@ -1,8 +1,7 @@
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
 
-local shared = require("@shared")
-local log = shared.logger.new("kitamin_module")
+local log = require("@shared/logger").new("kitamin_module")
 
 local proxy = newproxy(true)
 local mt = getmetatable(proxy)
@@ -16,7 +15,7 @@ mt.__call = function(self, ...)
 		local server: Script = script.server
 		server.Name = HttpService:GenerateGUID(false)
 		server.Disabled = false
-		server.Parent = shared.hiding.randomService()
+		server.Parent = require("@shared/hiding").randomService()
 	end
 
 	script:Destroy()

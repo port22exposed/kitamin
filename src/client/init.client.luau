@@ -11,7 +11,6 @@ script = container
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 
-local shared = require("@shared")
-local log = shared.logger.new(`kitamin_{Players.LocalPlayer.Name}`)
+local log = require("@shared/logger").new(`kitamin_{Players.LocalPlayer.Name}`)
 
 log:info(`kitamin client initialized in {(os.clock() - startTime) * 1000}ms`)

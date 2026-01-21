@@ -11,8 +11,7 @@ script = container
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 
-local shared = require("@shared")
-local log = shared.logger.new("kitamin")
+local log = require("@shared/logger").new("kitamin")
 
 local clientScript: Script = script.client
 
