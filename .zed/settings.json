@@ -26,6 +26,9 @@
           "download_api_documentation": true,
           "download_definitions": true,
         },
+        "fflags": {
+          "enable_new_solver": true,
+        },
         "sourcemap": {
           "enabled": true,
           "rojoProjectFile": "default.project.json",
