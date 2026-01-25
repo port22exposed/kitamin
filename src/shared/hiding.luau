@@ -1,4 +1,4 @@
-local accessibleServices = {}
+local accessibleServices: { Instance } = {}
 
 for _, service in game:GetChildren() do
 	pcall(function()
@@ -9,11 +9,13 @@ for _, service in game:GetChildren() do
 end
 
 -- remove potentially bad services
-pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("StarterPack")))
-pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("StarterPlayer")))
-pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("Teams")))
-pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("StarterGui")))
-pcall(table.remove, accessibleServices, table.find(accessibleServices, game:GetService("Lighting")))
+pcall(function()
+	table.remove(accessibleServices, table.find(accessibleServices, game:GetService("StarterPack")))
+	table.remove(accessibleServices, table.find(accessibleServices, game:GetService("StarterPlayer")))
+	table.remove(accessibleServices, table.find(accessibleServices, game:GetService("Teams")))
+	table.remove(accessibleServices, table.find(accessibleServices, game:GetService("StarterGui")))
+	table.remove(accessibleServices, table.find(accessibleServices, game:GetService("Lighting")))
+end)
 
 local API = {}
 
