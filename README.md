@@ -30,3 +30,4 @@ This project, including all source code and related files, is licensed under the
 
 - Vendored libraries
   - [Z](https://github.com/kohltastrophe/Z), found within [src/shared/vendored/Z.luau](./src/shared/vendored/Z.luau), is licensed under the MIT license referenced in the same file as a comment at the top.
+  - [rbxcreate](https://github.com/port22exposed/rbxcreate), found within [src/shared/vendored/create.luau](./src/shared/vendored/create.luau), is licensed under the MIT license reference in the same file as a comment at the top.
