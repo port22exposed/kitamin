@@ -14,9 +14,6 @@
     },
     "luau-lsp": {
       "settings": {
-        "platform": {
-          "type": "roblox",
-        },
         "inlayHints": {
           "parameterNames": "all",
         },
