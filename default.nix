@@ -9,6 +9,6 @@ stdenv.mkDerivation {
     rojo
     stylua
     selene
-    darklua
+    (callPackage ./pkgs/darklua.nix {})
   ];
 }
