@@ -1,3 +1,6 @@
+local TWEEN_IN_TIME = 1
+
+local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 
 local create = require("@shared/vendored/create")
@@ -38,8 +41,17 @@ local toastStack = create("ScrollingFrame")({
 
 local API = {}
 
-function API.createToast(title: string, description: string, imageId: string?)
-	imageId = imageId or assets.ICON
+function API.createToast(
+	title: string,
+	description: string,
+	extras: {
+		imageId: string?,
+		lifespan: number?,
+	}?
+)
+	extras = extras or {}
+	local imageId = extras.imageId or assets.ICON
+	local lifespan = extras.lifespan or 3
 
 	local icon = create("ImageLabel")({
 		AnchorPoint = Vector2.new(0, 0.5),
@@ -47,6 +59,7 @@ function API.createToast(title: string, description: string, imageId: string?)
 		Size = UDim2.new(0, 56, 0, 56),
 		BackgroundTransparency = 1,
 		Image = imageId,
+		ImageTransparency = 1,
 	})
 
 	local iconWidthOffset = icon.Size.X.Offset + 8
@@ -59,6 +72,7 @@ function API.createToast(title: string, description: string, imageId: string?)
 		TextColor3 = colours.ACCENT_COLOUR,
 		RichText = true,
 		Font = Enum.Font.Roboto,
+		TextTransparency = 1,
 
 		Position = UDim2.new(0, iconWidthOffset, 0, 0),
 		AnchorPoint = Vector2.new(0, 0),
@@ -75,6 +89,7 @@ function API.createToast(title: string, description: string, imageId: string?)
 		Font = Enum.Font.Roboto,
 		RichText = true,
 		TextWrapped = true,
+		TextTransparency = 1,
 
 		Position = UDim2.new(0, iconWidthOffset, 1, 0),
 		AnchorPoint = Vector2.new(0, 1),
@@ -83,7 +98,7 @@ function API.createToast(title: string, description: string, imageId: string?)
 	})
 
 	local toastFrame = create("Frame")({
-		Size = UDim2.new(1, 0, 0.075, 0),
+		Size = UDim2.new(0, 0, 0.075, 0),
 		Position = UDim2.new(0.5, 0, 0, 0),
 		AnchorPoint = Vector2.new(0.5, 0),
 		BackgroundColor3 = colours.BACKGROUND_COLOUR,
@@ -98,6 +113,43 @@ function API.createToast(title: string, description: string, imageId: string?)
 	titleLabel.Parent = toastFrame
 	descriptionLabel.Parent = toastFrame
 	toastFrame.Parent = toastStack
+
+	local tweenTime = TWEEN_IN_TIME / 2
+
+	local backingTween = TweenService:Create(toastFrame, TweenInfo.new(tweenTime), {
+		Size = UDim2.new(1, 0, 0.075, 0),
+	})
+
+	local function tweenTransparency(transparency: number)
+		TweenService:Create(titleLabel, TweenInfo.new(tweenTime), {
+			TextTransparency = transparency,
+		}):Play()
+		TweenService:Create(descriptionLabel, TweenInfo.new(tweenTime), {
+			TextTransparency = transparency,
+		}):Play()
+		TweenService:Create(icon, TweenInfo.new(tweenTime), {
+			ImageTransparency = transparency,
+		}):Play()
+	end
+
+	backingTween:Play()
+	backingTween.Completed:Once(function()
+		tweenTransparency(0)
+
+		task.delay(tweenTime + lifespan, function()
+			tweenTransparency(1)
+
+			local backingTween = TweenService:Create(toastFrame, TweenInfo.new(tweenTime), {
+				Size = UDim2.new(0, 0, 0.075, 0),
+			})
+			task.delay(tweenTime, function()
+				backingTween:Play()
+				backingTween.Completed:Once(function()
+					toastFrame:Destroy()
+				end)
+			end)
+		end)
+	end)
 end
 
 return API
