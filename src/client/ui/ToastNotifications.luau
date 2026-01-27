@@ -2,6 +2,7 @@ local Players = game:GetService("Players")
 
 local create = require("@shared/vendored/create")
 local colours = require("@shared/colours")
+local assets = require("@shared/assets")
 
 local localPlayer = Players.LocalPlayer
 
@@ -37,7 +38,9 @@ local toastStack = create("ScrollingFrame")({
 
 local API = {}
 
-function API.createToast(title: string, description: string, imageId: string)
+function API.createToast(title: string, description: string, imageId: string?)
+	imageId = imageId or assets.ICON
+
 	local icon = create("ImageLabel")({
 		AnchorPoint = Vector2.new(0, 0.5),
 		Position = UDim2.new(0, 0, 0.5, 0),
