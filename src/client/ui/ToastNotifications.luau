@@ -1,4 +1,4 @@
-local TWEEN_IN_TIME = 1
+local TWEEN_IN_TIME = 0.25
 
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
@@ -98,7 +98,7 @@ function API.createToast(
 	})
 
 	local toastFrame = create("Frame")({
-		Size = UDim2.new(0, 0, 0.075, 0),
+		Size = UDim2.new(0, 0, 0, 0),
 		Position = UDim2.new(0.5, 0, 0, 0),
 		AnchorPoint = Vector2.new(0.5, 0),
 		BackgroundColor3 = colours.BACKGROUND_COLOUR,
@@ -140,7 +140,7 @@ function API.createToast(
 			tweenTransparency(1)
 
 			local backingTween = TweenService:Create(toastFrame, TweenInfo.new(tweenTime), {
-				Size = UDim2.new(0, 0, 0.075, 0),
+				Size = UDim2.new(0, 0, 0, 0),
 			})
 			task.delay(tweenTime, function()
 				backingTween:Play()
