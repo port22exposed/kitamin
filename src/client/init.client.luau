@@ -8,10 +8,8 @@ script.Disabled = true
 script:Destroy()
 script = container
 
-local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 
-local toast = require("@self/ui/ToastNotifications")
 local log = require("@shared/logger").new(`kitamin_{Players.LocalPlayer.Name}`)
 
 log:debug(`kitamin client initialized in {(os.clock() - startTime) * 1000}ms`)
