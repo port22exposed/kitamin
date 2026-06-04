@@ -1,3 +1,7 @@
+> [!CAUTION]
+> This project has been archived as I have lost all motivation to develop on Roblox in the current state of the platform.
+> Original README is as follows below.
+
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/port22exposed/kitamin/refs/heads/main/assets/logo.png" width="128" height="128">
 <br>kitamin</h1>
